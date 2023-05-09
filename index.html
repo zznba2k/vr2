@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto load</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 600px;
+        height: 400px;
+    }
+    </style>
+</head>
+<body>
+
+<center>
+<h1>張家祖廟</h1>
+<p>張家祖廟是位於臺灣中部的臺中市西屯區的直轄市定古蹟，鄰近統聯客運台中轉運站。屬私人祠堂性質，正殿奉祀祖先牌位，左右內外護龍除供族人居住外亦出租給外人使用。</p>
+<p></p>
+<div id="panorama"></div>
+<iframe src="tour.html"></iframe>
+<div style="width: 600px; background-color: black; color: ghostwhite;">
+2023 資科系 陳威吉</div>
+</center>
+<script>
+pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "1.jpg",
+    "autoLoad": true
+});
+</script>
+
+</body>
+</html>
